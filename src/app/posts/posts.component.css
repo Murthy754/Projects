@@ -1,0 +1,21 @@
+.float{
+    float: right;
+    margin-left: 2%;
+}
+.position{
+    margin-left: 80%;
+}
+.example-card {
+    max-width: 600px;
+    margin-left: 3%;
+  }
+  .center {
+    margin: auto;
+    margin-bottom: 2%;
+    width: 50%;
+    border: 3px solid #2a2b2a27;
+    padding: 10px;
+  }
+  .example-header-image {
+    background-size: cover;
+  }

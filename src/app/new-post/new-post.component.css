@@ -1,0 +1,19 @@
+.container{
+    opacity: 30;
+    margin-top: 18%;
+}
+
+.loader{
+    float: center;
+}
+
+.div{
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.image{
+    height: 150px;
+    width: auto;
+}

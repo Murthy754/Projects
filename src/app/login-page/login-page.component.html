@@ -1,0 +1,24 @@
+
+<div class="loginAlign col-sm-6" > 
+    <form [formGroup]= "loginForm" (ngSubmit)="onLoginSubmit()" class="form-horrizontal">
+        <h2><b>LogIn</b></h2>
+        <div>
+        <mat-form-field class="col-sm-6 margin">
+            <input  formControlName="email" matInput class="form-control" placeholder="Email" type="text">
+            <mat-error *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched">Email is Required</mat-error>
+            <mat-error *ngIf="loginForm.get('email')?.hasError('pattern') ">Email should be Valid</mat-error>
+        </mat-form-field>
+        </div>
+        <div>
+        <mat-form-field class="col-sm-6 margin"> 
+            <input matInput formControlName="password" class="form-control" placeholder="Password" type="password">
+            <mat-error *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">Password is Required</mat-error>
+            <mat-error *ngIf="loginForm.get('password')?.hasError('minlength') ">Password should be greater than 8 characters</mat-error>
+            <mat-error *ngIf="loginForm.get('password')?.hasError('maxlength') ">Password should be less than 10 characters</mat-error>
+        </mat-form-field>
+    </div>
+    <div class="form-footer">
+        <button type="submit" mat-raised-button color="primary">Sign in</button>
+        <button mat-raised-button (click)="registerNewUser()" color="primary">Register</button></div>
+    </form>
+</div>

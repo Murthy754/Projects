@@ -1,0 +1,21 @@
+.loginAlign{
+    opacity: 30;
+    float:center;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(48%, -50%);
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+.form-footer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25%;
+}
+

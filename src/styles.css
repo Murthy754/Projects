@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+ background-color: rgba(0, 0, 0, 0.938);}
+
+snack-bar-container.success{
+    background-color: green;
+    color: honeydew;
+}
+
+snack-bar-container.error{
+    background-color : red;
+    color: honeydew;
+}
+
+snack-bar-container.processing{
+    background-color : rgb(255, 146, 4);
+    color: honeydew;
+}
+snack-bar-container.notification simple-snack-bar{
+    font-size: 18px !important;
+    font-weight: bold;
+}
