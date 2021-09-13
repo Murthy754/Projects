@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <div class="position">
+            <button  mat-raised-button  (click)="newPost()">New Post</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button  mat-raised-button  (click)="logoutUser()">LogOut</button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<br><br><br>
+<div class="center" *ngFor="let image of images , trackBy : trackPosts">
+<mat-card class="example-card">
+  <mat-card-header>
+    <img mat-card-avatar src={{image.imgUrl}} class="img">
+    <mat-card-title> {{image.name}}</mat-card-title>
+    <mat-card-subtitle>Posted on :{{image.date}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src={{image.imgUrl}} alt="Image">
+  <mat-card-content>
+    <p>
+     {{image.caption}}
+    </p>
+  </mat-card-content>
+</mat-card>
+</div>
